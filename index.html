@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Krishna Bhardwaj | Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">Krishna</div>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="burger">
+      <div class="line1"></div>
+      <div class="line2"></div>
+      <div class="line3"></div>
+    </div>
+  </nav>
+
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h1>Hi, I'm <span>Krishna Bhardwaj</span></h1>
+      <p>Full Stack Web Developer</p>
+      <a href="#contact" class="cta-button">Get in Touch</a>
+
+      <!-- CV Dropdown Button -->
+      <div class="cv-dropdown">
+        <button class="cta-button">Download CV</button>
+        <div class="cv-options">
+          <a href="assets/Krishna_Bhardwaj_CV_Developer.pdf" download>CV - Developer</a>
+          <a href="assets/Krishna_Bhardwaj_CV_Designer.pdf" download>CV - Social Media</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="about">
+    <h2>About Me</h2>
+    <p>I am a dedicated developer with a passion for creating modern, functional web applications. I enjoy solving problems and building efficient solutions.</p>
+    <div class="skills">
+      <h3>Skills</h3>
+      <div class="skill-tags">
+        <span>HTML</span>
+        <span>CSS</span>
+        <span>JavaScript</span>
+        <span>React</span>
+        <span>Node.js</span>
+        <span>Java</span>
+        <span>Learning Python</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="projects">
+    <h2>My Projects</h2>
+    <div class="project-grid">
+      <div class="project-card">
+        <video width="300" controls>
+          <source src="assets/video.mp4" type="video/mp4">
+        </video>
+        <h3>Travel Experience Video</h3>
+        <p>Short Captured and edited a travel video showcasing scenic views, cultural moments, and vibrant experiences. Focused on smooth transitions, background music sync, and storytelling through visuals to create an immersive viewer experience..</p>
+        <div class="project-links">
+          <a href="#" target="_blank">Live Demo</a>
+          <a href="#" target="_blank">Source Code</a>
+        </div>
+      </div>
+      <div class="project-card">
+        <img src="assets/image/todoapp.JPG" alt="Todo App" style="width: 150px; height: auto;" />
+
+        <h3>TODO LIST </h3>
+        <p>A modern Todo App built with Next.js 14, React 18, and TypeScript. Styled using Tailwind CSS and uses UUID for generating unique task IDs. Fast, responsive, and ideal for daily task management.</p>
+        <div class="project-links">
+          <a href="https://github.com/krishna-bhardwaj012/Todoapp" target="_blank">Live Demo</a>
+          <a href="https://github.com/krishna-bhardwaj012/Todoapp" target="_blank">Source Code</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Contact Me</h2>
+    <div class="contact-content">
+      <form class="contact-form">
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <textarea placeholder="Your Message" required></textarea>
+        <button type="submit" class="submit-btn">Send Message</button>
+      </form>
+      <div class="contact-info">
+        <p><i class="fas fa-envelope"></i> kb776391@gmail.com</p>
+        <p><i class="fas fa-phone"></i> +91 7763912606</p>
+        <div class="social-links">
+          <a href="https://linkedin.com/in/your-profile" target="_blank"><i class="fab fa-linkedin"></i></a>
+          <a href="https://github.com/your-username" target="_blank"><i class="fab fa-github"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 Krishna Bhardwaj. All rights reserved.</p>
+  </footer>
+
+  <script>
+    const burger = document.querySelector('.burger');
+    const nav = document.querySelector('.nav-links');
+    burger.addEventListener('click', () => {
+      nav.classList.toggle('nav-active');
+    });
+  </script>
+</body>
+</html>
